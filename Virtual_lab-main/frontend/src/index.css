@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* ── PhysicsPlayground Design Tokens ── */
+@theme {
+  --color-pg-canvas: #0f1219;
+  --color-pg-panel: #161b26;
+  --color-pg-panel-hover: #1e2536;
+  --color-pg-edge: #2a3245;
+  --color-pg-primary: #14b8a6;
+  --color-pg-primary-light: #2dd4bf;
+  --color-pg-highlight: #f59e0b;
+  --color-pg-highlight-light: #fbbf24;
+  --color-pg-ok: #10b981;
+  --color-pg-caution: #eab308;
+  --color-pg-critical: #f43f5e;
+  --color-pg-text: #e8ecf4;
+  --color-pg-text-dim: #8494a7;
+  --font-display: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-code: 'Fira Code', ui-monospace, monospace;
+}
+
+/* ── Global Resets ── */
+body {
+  margin: 0;
+  background: var(--color-pg-canvas);
+  color: var(--color-pg-text);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100svh;
+}
